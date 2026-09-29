@@ -1,0 +1,110 @@
+1.Find the Factors
+Write a Python program using a while loop to find and display all the factors of a given number.
+
+num=int(input("enter the number : ")) #10
+
+i=1
+
+while i<=num:
+    if num%i==0:
+        print(i)
+    i+=1
+
+========================================================================================================
+
+2.Sum of Even Factors
+Write a Python program using a while loop to find the sum of all even factors of a given number.
+
+
+num=int(input("enter the number : "))
+
+i=1
+total=0
+
+while i<=num: 
+    if num%i==0 and i%2==0:
+        total=total+i
+    i=i+1
+print(f"the total of the even factors of the given number is {total}")
+
+=========================================================================================================
+
+3.Sum of Odd Factors
+Write a Python program using a while loop to find the sum of all odd factors of a given number.
+
+num=int(input("enter the number : "))
+
+i=1
+total=0
+
+while i<=num:
+    if num%i==0 and i%2!=0:
+        total+=i
+    i+=1
+print(f"The total sum of the odd factors of the given number is {total}")
+
+=========================================================================================================
+
+4.Count the Factors
+Write a Python program using a while loop to count how many factors a given number has.
+
+num=int(input("enter the number : "))
+
+i=1
+count=0
+while i<=num:
+    if num%i==0:
+        count+=1 
+        
+    i+=1
+
+print(f"The total count of factors of a given number is {count} ")
+
+=====================================================================================================
+
+5.Sum of Factors
+ Write a Python program using a while loop to calculate the sum of all factors of a given number.
+
+num=int(input("enter the number : "))
+
+i=1
+total=0
+
+while i <=num:
+    if num%i==0:
+        total=total+i
+    i+=1
+print(total)
+======================================================================================================
+
+6.Even factors count
+Wap to the count of even factors of a number enter
+
+num=int(input("enter the number : "))
+
+i=1
+total=0
+
+while i<=num: 
+    if num%i==0 and i%2==0:
+        total=total+1
+    i=i+1
+print(f"the total count of the even factors of the given number is {total}")
+
+=======================================================================================================
+7.odd_product
+wap to get the product of odd factors of the number entered
+
+num=int(input("enter the number : "))
+
+i=1
+total=1
+
+while i<=num:
+    if num%i==0 and i%2!=0:
+        total=total*i
+    i+=1
+print(f"The total product of the odd factors of the given number is {total}")
+
+========================================================================================================
+    
