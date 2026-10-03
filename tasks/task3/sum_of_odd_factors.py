@@ -11,3 +11,4 @@ while i<=num:
         total+=i
     i+=1
 print(f"The total sum of the odd factors of the given number is {total}")
+

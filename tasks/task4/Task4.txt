@@ -1,0 +1,190 @@
+1.#Write a program to print all numbers from 1 to 50 using a for loop.
+
+for i in range(1,51):
+    print(i)
+
+=======================================================================================================================
+
+2.#Write a program to print all even numbers between 1 and 100.
+
+for i in range(1,101):
+    if i%2==0:
+        print(i)
+
+=======================================================================================================================
+
+3.#Write a program to print all odd numbers between 1 and 100
+
+
+for i in range(1,101):
+    if i%2!=0:
+        print(i)
+
+=======================================================================================================================
+
+4.#Write a program to find the sum of all numbers from 1 to 100
+
+
+total=0
+for i in range(1,101):
+    total=total+i
+
+print(total)
+
+=======================================================================================================================
+
+5.#Write a program to find the sum of all even numbers between 1 and 100.
+
+total=0
+for i in range(1,101):
+    if i%2==0:
+        total=total+i
+
+print(total)
+
+=======================================================================================================================
+
+6.#Write a program to count how many even numbers are present between 1 and 100.
+
+count=0
+for i in range(1,101):
+    if i%2==0:
+        count+=1
+print(count)
+
+
+=======================================================================================================================
+
+7.#Read a number from the user and print its multiplication table from 1 to 10.
+
+num=int(input("enter the number: "))
+
+print(f"The multiplication table for the number {num} is given below")
+
+for i in range(1,11):
+    mul=i*num
+   
+    print(f"{i} x {num} = {mul} ")
+
+=======================================================================================================================
+
+8.#Read a number from the user and print all its factors using a for loop
+
+num=int(input("enter the number : "))
+
+print(f"The factors of the number {num} are : ")
+
+for i in range(1, num+1):
+    if num%i==0:
+        print(i)
+
+=======================================================================================================================
+
+9.#Read a number from the user and find the total number of factors it has.
+
+num=int(input("enter the number : "))
+
+count=0
+for i in range(1,num+1):
+    if num%i==0:
+        count+=1
+print(f"The total count of factors for the number {num} is {count}")
+
+
+=======================================================================================================================
+
+
+
+10.#Read a number from the user and calculate the sum of all its factors.
+
+num=int(input("enter the inpur: "))
+
+total=0
+for i in range(1,num+1):
+    if num%i==0:
+        total=total+i
+
+print(total)
+
+
+=======================================================================================================================
+
+
+
+11.#Read a number from the user and calculate the sum of only its even factors.
+
+num=int(input("enter the number :"))
+
+total=0
+for i in range(1,num+1):
+    if num%i==0 and i%2==0:
+        total=total+i
+
+print(f"The total sum of the even factors of the number {num} is {total}")
+
+
+
+=======================================================================================================================
+
+
+12.#Read a number from the user and find how many even factors it has.
+
+num=int(input("enter the number :"))
+
+count=0
+for i in range(1,num+1):
+    if num%i==0 and i%2==0:
+        count+=1
+
+print(f"The total count of the even factors of the number {num} is {count}")
+
+
+=======================================================================================================================
+
+
+13.#Write a program to find and display the factorial of each number from 6 down to 1.
+# Example order: 6!, 5!, 4!, 3!, 2!, 1!.
+
+for i in range(6,0,-1):
+    fact=1
+    for j in range(1,i+1):
+        fact=fact*j
+
+    print(f"the factorial of the number {i} is {fact}")
+    
+
+=======================================================================================================================
+
+
+14.#Read a number n from the user and find the total count of numbers from 1 to n that are divisible by both 3 and 5.
+
+n=int(input("enter the number : "))
+
+count=0
+for i in range(1,n+1):
+    if i%3==0 and i%5==0:
+        
+        count+=1
+
+print(f"the total count of numbers that are divisible by both 3 and 5 are {count}")
+
+
+=======================================================================================================================
+
+
+15.#Write a program to find the sum of all even factors for each number from 10 down to 6. Display the result for each number.
+
+for i in range(10, 5, -1):
+    sum = 0
+
+    for j in range(1, i + 1):
+        if i % j == 0 and j % 2 == 0:
+            sum = sum + j
+
+    print(f"The sum of even factors of {i} is {sum}")
+
+=======================================================================================================================
+
+
+
+

@@ -5,25 +5,18 @@
 # 1+125+27=153
 #370======, 3³ = 27, 7³ = 343, 0³ = 0 , 27 + 343 + 0 = 370  
 
-
-num=int(input("enter the number: "))
+num=int(input("enter the no: "))
 temp=num
-length=len(str(num))
-
 total=0
 
-while(num>0):
-    last_digit=num%10
-    cube=last_digit**length
-    total=total+cube
-
+while num>0:
+    last_d=num%10
+    cube=last_d**3
+    total+=cube
     num//=10
 
+
 if total==temp:
-    print(f"Number {temp} is armstrong")
+    print(f"the number {temp} is an armstrong no")
 else:
-    print(f"Number {temp} is not armstrong")
-
-
-
-    
+    print("not armstrong")
