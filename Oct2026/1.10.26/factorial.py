@@ -6,3 +6,4 @@ for i in range(3,6):
         fact=fact*j
 
     print(f"the factorial of the number {i} is {fact}")
+

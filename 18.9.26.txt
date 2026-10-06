@@ -1,0 +1,65 @@
+18.9.26
+
+Python
+
+Python is an high level language.
+Also an object oriented programming language.
+applicable for web dev and data science.
+
+Note:
+py is case sensitive
+
+
+Note:
+Given a qn we must consider some things first
+1.Ip values
+2.operation
+3. result
+
+programming?
+The step by step instructions given to the machine to do some particular task.
+
+
+Identifiers?
+An identifier is simply a name that you give to something in your Python program.
+ex. variables in py
+mark1=90
+here mark1 is the variable and 90 is the value stored inside the variable.
+
+data types?
+the type of data/value we are assigning to each variable
+
+Types :
+
+1.first_name= "Abhi"    #String str()
+2. age= 26              #integer int()
+3.height = 1.3          #float 
+4.is_active=True        #boolean
+
+--------------------------------------------------------------------------------------------
+#wap to display the name , age and place of yourself
+
+
+firstname= input("name  : ")
+age=input("age  : ")
+place=input("place  : ")
+print("his name is:",firstname)
+print("his age is:",age)
+print("his place is:",place)
+
+#input() function is used to take the ip from the user and store it in a variable.
+#when we are giving the ip in runtime then we must give the prompt inside the input function , for ex: input("name ").
+#We used some decoration kinda things in the op fucntion i.e "his name is " and added a comma to seperate the string and  ther variable. 
+#So that now the op becomes 
+#name  : Abhi
+#age  : 22
+#place  : tvm
+#his name is: Abhi
+#his age is: 22
+#his place is: tvm
+---------------------------------------------------------------------------------------------
+
+
+
+
+

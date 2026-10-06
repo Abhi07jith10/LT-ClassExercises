@@ -1,0 +1,15 @@
+17.9.26
+
+1.VS CODE
+customisable code editor better than py charm.
+
+2.CMD?
+we can use some commands do the works  for ex:opening a folder in vs code
+ex:code.
+
+3.In vs code the window we type our code is known as code editor and the output is shown in the console tab.
+
+4.Vs code
+sample.py  this goes to the python interpreter and then to the machine(OS) then retreieved to the interpreter then to vs code and shows the      op.
+
+PEP8 documentation defines the code quality n all.
