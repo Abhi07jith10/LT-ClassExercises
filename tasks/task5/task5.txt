@@ -1,0 +1,159 @@
+Task5
+=====
+
+1.Replace Vowels with *
+Sample Input: "education"
+Sample Output: "*d*c*t**n"
+
+code:
+====
+string="education"
+
+vowels="aeiou"
+
+new=""
+for i in string:
+    if i in vowels:
+        new=new+"*"
+    else:
+        new=new+i
+
+
+print(new)
+
+===============================================================
+
+2.Find the First Non-Repeating Character
+Sample Input: "aabbcddee"
+Sample Output: "c
+
+code:
+====
+string="aabbcddee"
+
+for i in string:
+    if string.count(i)==1:
+        print(i)
+        break
+
+================================================================
+
+3.Check Whether Two Strings Are Rotations
+Sample Input 1: "abcd"
+Sample Input 2: "cdab"
+Sample Output: "Rotation"
+
+code:
+====
+
+word1="abcd"
+word2="cdab"
+
+new_word=word1+word1
+
+if len(word1)==len(word2):
+        if word2 in new_word:
+            print("rotation")
+        else:
+            print("not rotation")
+
+================================================================
+4.Compress a String
+  Sample Input: "aaabbccccdaa"
+  Sample Output: "a3b2c4d1a2"
+
+string="aaabbccccdaa"
+new=""
+for i in string:
+    count=string.count(i)
+    if i not in new:
+       new=new+i+str(count)
+
+print(new)
+===============================================================
+
+5.Expand an Encoded String
+Sample Input: "a3b2c4"
+Sample Output: "aaabbcccc"
+
+code:
+====
+string="a3b2c4"
+new=""
+letter=""
+for i in string:
+      if i.isalpha():
+          letter=i
+      elif i.isdigit():
+          digit=int(i)
+          new+=letter*digit
+print(new)
+
+===============================================================
+
+7.Remove Characters at Odd Index Positions
+  Sample Input: "python"
+  Sample Output: "pto"
+
+
+code:
+=====
+name = "python"
+
+for i in range(len(name)):
+    if i % 2 == 0:
+        print(name[i],end='')
+===============================================================
+
+8.Check Neon Number
+  Sample Input: 9
+  Sample Output: Neon Number
+  Sample Input: 12
+  Sample Output: Not a Neon Number
+
+ code:
+ =====
+num=int(input("enter the number: "))
+square=num**2
+total=0
+for i in str(square):
+    total=total+int(i)
+
+if total==num:
+    print(f"the number {num} is a neon number.")
+else:
+    print(f"the number {num} is not a neon number.")
+
+===============================================================
+
+9.Duck number
+  Sample Input: 1023
+  Sample Output: Duck Number
+  Sample Input: 1234
+  Sample Output: Not a Duck Number
+
+ code:
+ =====
+num = 1023
+string = str(num)
+
+for i in range(1, len(string)):
+    if string[i] == "0":
+        print(f"The number {num} is a Duck number")
+        break
+else:
+    print(f"The number {num} is not a Duck number")
+
+===============================================================
+
+
+
+
+
+
+
+
+
+
+
+
