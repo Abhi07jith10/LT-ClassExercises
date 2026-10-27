@@ -3,7 +3,7 @@
 #For example, 145 is a strong number because:
 # (1!+4!+5!=1+24+120=145)
 
-number=645
+number=145
 total=0
 
 for i in str(number):

@@ -1,0 +1,13 @@
+# print(name.upper())       # convert all characters into uppercase
+# print(name.lower())       # convert all characters into lowercase
+# print(name.capitalize())  # Helloworld # only first character in upper
+# print(name.count("l"))    # 3 # return the total occurrence of specific character
+# print(name.swapcase())    # change all the lowercase into uppercase and vice versa
+# print(name.index("l"))    # return the index where it occurs first
+# print(name.title())       # first letter of each word remains capital
+
+print(name.isupper())      # returns True if the string is upper
+print(name.islower())      # returns True if all characters are lowercase
+print(name.isdigit())      # returns True if the character is a digit
+print(name.isalpha())      # returns True if all characters are alphabets
+print(name.isalnum())      # returns True if characters contain either alphabets or numbers

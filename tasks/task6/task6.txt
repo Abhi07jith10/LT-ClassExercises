@@ -1,0 +1,180 @@
+1. Number Transformation
+Write a function that accepts an integer and returns a new number formed by replacing every even digit with
+0 and every odd digit with 1.
+Example: 583246 → 101010
+code:
+def transformation(num):
+    new=""
+    for i in str(num):
+        if int(i)%2==0:
+            new+="0"
+        else:
+            new+="1"
+    print(new)
+
+transformation(123456)
+===============================================================================================================
+2. Digit Frequency Analyzer
+Write a function that accepts a number and a digit. Return how many times that digit appears in the number.
+Example: Number = 1223122, Digit = 2 → 4
+code :
+def freq_analyzer(number, digit):
+    count = 0
+    for i in str(number):
+        if i == str(digit):
+            count += 1
+    print(count)
+
+freq_analyzer(1223122, 2)  # 4
+===============================================================================================================
+3. Unique Digit Counter
+Write a function that accepts an integer and returns the number of distinct digits present in it.
+Example: 12234521 → 5
+code :
+def distinct(num):
+    
+    
+    new=""
+    count=0
+    for i in str(num):
+        if i not in new:
+            new+=i
+    print(len(new))
+
+distinct(112233445566)
+===============================================================================================================
+4. Number Reordering
+Write a function that accepts an integer and returns the number formed by arranging its digits in ascending
+order.
+Example: 583214 → 123458
+code:
+def num_reorder(num):
+    digits=str(num)
+    new=""
+
+    for i in range(0,10):
+        for j in digits:
+            if int(j)==i:
+                new+=j
+    return int(new)
+
+print(num_reorder(6105321))
+===============================================================================================================
+5. Electricity Bill Calculator
+Write a function that accepts the number of electricity units consumed and calculates the bill using these
+slabs:
+• First 100 units: ■2 per unit
+• Next 100 units: ■3 per unit
+• Units above 200: ■5 per unit
+Return the total bill amount. Apply each rate only to the units in its slab.
+code :
+def electricitybill():
+    units=int(input("enter the unit consumed: "))
+
+    if units <=100:
+        bill=units*2
+    elif units<=200:
+        bill=100*2+ (units-100)*3
+    else:
+        bill=100*2+ 100*3 + (units-200)*5
+
+    print(f"The total bill amount is {bill}")
+
+electricitybill()
+===============================================================================================================
+6. Password Strength Checker
+Write a function that accepts a password and returns its strength based on these conditions:
+• Weak: fewer than 8 characters
+• Medium: at least 8 characters but missing either an uppercase letter or a digit
+• Strong: at least 8 characters and contains both an uppercase letter and a digit.
+code:
+def password_strength(password):
+    cap_letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    small_letters="abcdefghijklmnopqrstuvwxyz"
+
+
+    if len(password)<8:
+        print("Password is weak")
+    else:
+        for i in password:
+            if i not in cap_letters or i.isalnum()==False:
+                print("Password is medium")
+                break
+            elif i in cap_letters and i.isalnum()==True:
+                print("Password is strong")
+                break
+
+password_strength("aaaaBBBC2024")
+===============================================================================================================
+7. Palindrome Number Checker
+Write a function that accepts an integer and returns True if the number reads the same forward and
+backward; otherwise, return False.
+Example: 12321 → True; 12345 → False
+code :
+def palindrome(number):
+    
+    new=""
+    temp=number
+    while number>0:
+        last_digit=number%10
+        new+=str(last_digit)
+        number//=10
+
+    print(new)
+    if (temp)==int(new):
+        print("True")
+    else:
+        print("False")
+
+
+palindrome(12321)
+===============================================================================================================
+8. Armstrong Number Range
+Write a function that accepts a number and checks whether it is an Armstrong number. Then write another
+function that displays all Armstrong numbers from 1 to a given limit.
+Example: For limit 500, display 1, 153, 370, 371, 407.
+code :
+def armstrong_range(limit):
+    for i in range(1,limit+1):
+        total=0
+        for j in str(i):
+            cube=int(j)**3
+            total+=cube
+        if total==i:
+            print(i)
+
+armstrong_range(500)
+===============================================================================================================
+9. Shopping Discount Calculator
+Write a function that accepts the total purchase amount and calculates the final amount after discount:
+• Below ■1,000: no discount
+• ■1,000–■4,999: 5% discount
+• ■5,000 and above: 10% discount
+Return the final payable amount.
+code:
+def payable_amount(total_amount):
+    if total_amount<1000:
+        print(f"The final amount is {total_amount}")
+    elif total_amount>1000 and total_amount<5000:
+        discount_amount=total_amount-total_amount*0.05
+        print(f"The payabale amount is {discount_amount}.")
+    else:
+        discount_amount=total_amount-total_amount*0.1
+        print(f"The payabale amount is {discount_amount}.")
+
+payable_amount(5000)
+===============================================================================================================
+10. Time Converter
+Write a function that accepts a total number of seconds and returns the equivalent hours, minutes, and
+remaining seconds.
+Example: 3,725 seconds → 1 hour, 2 minutes, 5 seconds.
+Challenge: Break each problem into clear steps and test your function with at least two different inputs
+code:
+def convert_seconds(total_seconds):
+    hours = total_seconds // 3600
+    minutes = (total_seconds % 3600) // 60
+    seconds = total_seconds % 60
+    print(f"{hours} hour(s), {minutes} minute(s), {seconds} second(s)")
+
+convert_seconds(3725)
+===============================================================================================================
