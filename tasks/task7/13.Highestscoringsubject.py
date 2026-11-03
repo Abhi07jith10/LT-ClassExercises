@@ -7,21 +7,13 @@ students = {
  103: {"Maths": 70, "Physics": 80, "Chemistry": 65}
 }
 
-highest_subject_marks_M=0
-highest_subject_marks_P=0
-highest_subject_marks_C=0
-
 for i in students:
-    if (students[i]["Maths"])>highest_subject_marks_M:
-        highest_subject_marks=(students[i]["Maths"]) 
-        print(i,f"Highest subject is {(students[i]["Maths"]) }")
-    
-    if (students[i]["Physics"])>highest_subject_marks_P:
-        highest_subject_marks_P=(students[i]["Physics"])
-        print(i,f"Highest subject is {(students[i]["Physics"]) }")
+    highest_mark=0
+    best_subject=""
+    for k in students[i]:
+        if students[i][k]>highest_mark:
+            highest_mark=students[i][k]
+            best_subject=k
+    print(f"student {i} scored highest in {best_subject} ({highest_mark})")
 
-
-    if (students[i]["Chemistry"])>highest_subject_marks_C:
-        highest_subject_marks_C=(students[i]["Chemistry"])
-        print(i,f"Highest subject is {(students[i]["Chemistry"]) }")
   

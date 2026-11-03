@@ -1,0 +1,226 @@
+1. Display Marks of a Student
+Create a nested list containing the marks of 3 students in 4 subjects. Display the marks of the second student.
+
+code:
+marks = [
+ [78, 85, 90, 88],
+ [65, 72, 80, 75],
+ [90, 92, 85, 95]
+]
+
+for i in marks:
+    print(marks[1])
+    break
+----------------------------------------------------------------------------------------------------------------------------------
+2.Sum of All Elements
+Calculate the sum of all elements in a nested list containing 3 rows and 4 columns using nested loops
+
+code:
+numbers = [
+ [10, 20, 30, 40],
+ [5, 15, 25, 35],
+ [2, 4, 6, 8]
+]
+
+total=0
+for i in numbers:
+    for j in i:
+        total=total+j
+
+print(total)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+3. Find the Largest Number
+Find the largest number in a nested list without using the max() function.
+
+code:
+numbers = [
+ [12, 45, 23],
+ [67, 34, 89],
+ [10, 56, 78]
+]
+
+largest=0
+for i in numbers:
+    if max(i)>largest:
+        largest=max(i)
+
+
+print(f"the largest number is {largest}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+4. Count Even Numbers
+Count the total number of even numbers present in a nested list.
+
+code:
+numbers = [
+ [12, 15, 18],
+ [21, 24, 27],
+ [30, 33, 36]
+]
+
+count=0
+for i in numbers:
+    for j in i:
+        if j%2==0:
+            count+=1
+
+print(f"total even numbers is {count}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+5. Sum of Each Row
+Calculate and display the sum of each row separately
+
+code:
+numbers = [
+ [10, 20, 30],
+ [5, 15, 25],
+ [2, 4, 6]
+]
+
+for i in numbers:
+    print(f"the sum of row is {sum(i)}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+6. Smallest Number in Each Row
+Find the smallest number in each row without using the min() function
+
+code:
+numbers = [
+ [12, 5, 18, 9],
+ [45, 23, 67, 10],
+]
+
+for i in numbers:
+    print(f"the smallst number in row  is {min(i)}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+7. Sum of Diagonal Elements
+Calculate the sum of the diagonal elements in a 3×3 matrix.
+
+code:
+matrix = [
+ [10, 20, 30],
+ [40, 50, 60],
+ [70, 80, 90]
+]
+
+new=[]
+for i in matrix:
+    for j in i:
+        new.append(j)
+
+
+total=new[0]+new[4]+new[8]
+print(total)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+8. Display Elements Column by Column
+Display the elements of a nested list column by column using nested loops.
+
+code:
+numbers = [
+ [10, 20, 30],
+ [40, 50, 60],
+ [70, 80, 90]
+]
+
+new=[]
+for i in numbers:
+    for j in i:
+        new.append(j)
+
+print(new[0],new[3],new[6])
+print(new[1],new[4],new[7])
+print(new[2],new[5],new[8])
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+9. Display Employee Salary
+Create a nested dictionary containing the details of 3 employees. Display the salary of the second employee.
+
+code:
+employees = {
+ 101: {"age": 25, "salary": 25000, "experience": 2},
+ 102: {"age": 30, "salary": 40000, "experience": 5},
+ 103: {"age": 28, "salary": 35000, "experience": 3}
+}
+
+for i in employees:
+    if i==102:
+        print(employees[i]["salary"])
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+10. Total Marks of Each Student
+Create a nested dictionary containing the marks of 3 students in 3 subjects. Calculate the total marks of each
+student.
+
+code:
+students = {
+ 101: {"Maths": 80, "Physics": 75, "Chemistry": 90},
+ 102: {"Maths": 65, "Physics": 85, "Chemistry": 70},
+ 103: {"Maths": 90, "Physics": 95, "Chemistry": 85}
+}
+
+for i in students:
+    total=students[i]["Maths"]+students[i]["Physics"]+students[i]["Chemistry"]
+    print(i,":",total)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+11. Employee with Highest Salary
+Find the employee who receives the highest salary without using the max() function.
+
+code:
+employees = {
+ 101: {"salary": 25000},
+ 102: {"salary": 45000},
+ 103: {"salary": 35000},
+ 104: {"salary": 50000}
+}
+
+highest_salary=0
+for i in employees:
+
+    if employees[i]["salary"]>highest_salary:
+        highest_salary=employees[i]["salary"]
+
+print(f"Employee id:{i}")
+print(f"salary is {highest_salary}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+12.Create a nested dictionary containing the price, quantity, and discount percentage of 3 products. Calculate the final price of each product after applying the discount.
+
+products = {
+ 101: {"price": 1000, "quantity": 2, "discount": 10},
+ 102: {"price": 500, "quantity": 3, "discount": 20},
+ 103: {"price": 2000, "quantity": 1, "discount": 15}
+}
+
+for i in products:
+    discount=products[i]["price"]*products[i]["discount"]/100
+    discount_price=products[i]["price"]-discount
+    print(f"product is {i} and final price is {discount_price}")
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
