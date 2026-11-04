@@ -24,3 +24,6 @@ for i in students:
     if students[i]["name"]=="Arun":
         print(students[i]["name"],max(students[i]['marks']))
 
+
+
+

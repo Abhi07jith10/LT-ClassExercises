@@ -18,3 +18,5 @@ while True:
     finally:     #block used to execute the code whether exception occurs or not
 
         print("Thank you")
+
+

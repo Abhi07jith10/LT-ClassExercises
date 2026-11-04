@@ -1,0 +1,1 @@
+'python is simple''python is simple yet hard to study''python is simple yet hard to study'/n 'broooo'

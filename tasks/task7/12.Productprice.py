@@ -9,4 +9,5 @@ products = {
 
 for i in products:
     discount=products[i]["price"]*products[i]["discount"]/100
-    print(f"product is {i} and final price is {discount}")
+    discount_price=products[i]["price"]-discount
+    print(f"product is {i} and final price is {discount_price}")

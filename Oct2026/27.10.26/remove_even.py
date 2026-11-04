@@ -7,3 +7,5 @@ for i in numbers.copy():
         numbers.remove(i)
 
 print(numbers)
+
+
